@@ -49,6 +49,8 @@ function scuro(){ //Es5
     element.classList.add('bg-dark');
     element.classList.remove("text-dark");
     element.classList.add('text-light');
+    document.getElementById('scuro').classList.toggle('d-none');
+    document.getElementById('chiaro').classList.toggle('d-none');
 }
 function chiaro(){ //Es5
     let element = document.getElementById('divColor');
@@ -56,6 +58,8 @@ function chiaro(){ //Es5
     element.classList.add('bg-light');
     element.classList.remove("text-light");
     element.classList.add('text-dark');
+    document.getElementById('scuro').classList.toggle('d-none');
+    document.getElementById('chiaro').classList.toggle('d-none');
 }
 function aggiungiRiga(){ //Es6
     let testo = document.getElementsByName('newElementInput')[0].value;
